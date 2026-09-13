@@ -1,0 +1,16 @@
+feature,importance
+apoapsis,0.28439385
+horizon_hours,0.1489434
+semimajor_axis,0.1433625
+mean_motion,0.08346825
+period,0.048087087
+periapsis,0.0470894
+bstar,0.04535585
+mean_motion_dot,0.038453717
+inclination,0.031903926
+source_tle_age_hours,0.029545674
+mean_anomaly,0.025591282
+ra_of_asc_node,0.025363147
+arg_of_pericenter,0.024671633
+eccentricity,0.023770269
+mean_motion_ddot,0.0

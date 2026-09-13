@@ -1,0 +1,21 @@
+bin,bin_lower,bin_upper,mean_predicted,observed_frequency,count,model,held_out_satellite,calibration
+0,0.0,0.1,,,0,horizon_only,Hubble Space Telescope,raw
+1,0.1,0.2,,,0,horizon_only,Hubble Space Telescope,raw
+2,0.2,0.30000000000000004,,,0,horizon_only,Hubble Space Telescope,raw
+3,0.30000000000000004,0.4,0.3477599620819092,0.06936416184971098,173,horizon_only,Hubble Space Telescope,raw
+4,0.4,0.5,,,0,horizon_only,Hubble Space Telescope,raw
+5,0.5,0.6000000000000001,0.5244600176811218,0.36082474226804123,97,horizon_only,Hubble Space Telescope,raw
+6,0.6000000000000001,0.7000000000000001,0.6863440871238708,0.7586206896551724,87,horizon_only,Hubble Space Telescope,raw
+7,0.7000000000000001,0.8,,,0,horizon_only,Hubble Space Telescope,raw
+8,0.8,0.9,,,0,horizon_only,Hubble Space Telescope,raw
+9,0.9,1.0,,,0,horizon_only,Hubble Space Telescope,raw
+0,0.0,0.1,0.05995998531579971,0.06936416184971098,173,horizon_only,Hubble Space Telescope,calibrated
+1,0.1,0.2,0.15524256229400635,0.36082474226804123,97,horizon_only,Hubble Space Telescope,calibrated
+2,0.2,0.30000000000000004,,,0,horizon_only,Hubble Space Telescope,calibrated
+3,0.30000000000000004,0.4,0.3393247425556183,0.7586206896551724,87,horizon_only,Hubble Space Telescope,calibrated
+4,0.4,0.5,,,0,horizon_only,Hubble Space Telescope,calibrated
+5,0.5,0.6000000000000001,,,0,horizon_only,Hubble Space Telescope,calibrated
+6,0.6000000000000001,0.7000000000000001,,,0,horizon_only,Hubble Space Telescope,calibrated
+7,0.7000000000000001,0.8,,,0,horizon_only,Hubble Space Telescope,calibrated
+8,0.8,0.9,,,0,horizon_only,Hubble Space Telescope,calibrated
+9,0.9,1.0,,,0,horizon_only,Hubble Space Telescope,calibrated

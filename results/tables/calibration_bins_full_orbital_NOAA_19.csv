@@ -1,0 +1,21 @@
+bin,bin_lower,bin_upper,mean_predicted,observed_frequency,count,model,held_out_satellite,calibration
+0,0.0,0.1,0.01841995120048523,0.0,654,full_orbital,NOAA 19,raw
+1,0.1,0.2,0.13336431980133057,0.0,5,full_orbital,NOAA 19,raw
+2,0.2,0.30000000000000004,,,0,full_orbital,NOAA 19,raw
+3,0.30000000000000004,0.4,,,0,full_orbital,NOAA 19,raw
+4,0.4,0.5,,,0,full_orbital,NOAA 19,raw
+5,0.5,0.6000000000000001,,,0,full_orbital,NOAA 19,raw
+6,0.6000000000000001,0.7000000000000001,,,0,full_orbital,NOAA 19,raw
+7,0.7000000000000001,0.8,,,0,full_orbital,NOAA 19,raw
+8,0.8,0.9,,,0,full_orbital,NOAA 19,raw
+9,0.9,1.0,,,0,full_orbital,NOAA 19,raw
+0,0.0,0.1,0.00476970337331295,0.0,659,full_orbital,NOAA 19,calibrated
+1,0.1,0.2,,,0,full_orbital,NOAA 19,calibrated
+2,0.2,0.30000000000000004,,,0,full_orbital,NOAA 19,calibrated
+3,0.30000000000000004,0.4,,,0,full_orbital,NOAA 19,calibrated
+4,0.4,0.5,,,0,full_orbital,NOAA 19,calibrated
+5,0.5,0.6000000000000001,,,0,full_orbital,NOAA 19,calibrated
+6,0.6000000000000001,0.7000000000000001,,,0,full_orbital,NOAA 19,calibrated
+7,0.7000000000000001,0.8,,,0,full_orbital,NOAA 19,calibrated
+8,0.8,0.9,,,0,full_orbital,NOAA 19,calibrated
+9,0.9,1.0,,,0,full_orbital,NOAA 19,calibrated

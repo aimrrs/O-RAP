@@ -1,0 +1,5 @@
+feature,display_name,smd,abs_smd,ks_distance,normalized_gain,high_shift,high_importance,both_high
+apoapsis,Apoapsis,-0.7986710738754561,0.7986710738754561,1.0,0.27249153475463916,True,True,True
+semimajor_axis,Semimajor axis,-0.7990801641684223,0.7990801641684223,1.0,0.15595700708437568,True,True,True
+mean_motion,Mean motion,0.9982973318636216,0.9982973318636216,1.0,0.10991022093821688,True,True,True
+periapsis,Periapsis,-0.7994966173663648,0.7994966173663648,1.0,0.0525412145500145,True,True,True

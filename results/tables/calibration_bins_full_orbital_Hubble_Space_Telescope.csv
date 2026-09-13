@@ -1,0 +1,21 @@
+bin,bin_lower,bin_upper,mean_predicted,observed_frequency,count,model,held_out_satellite,calibration
+0,0.0,0.1,,,0,full_orbital,Hubble Space Telescope,raw
+1,0.1,0.2,0.17734214663505554,0.0,16,full_orbital,Hubble Space Telescope,raw
+2,0.2,0.30000000000000004,0.24699769914150238,0.0,37,full_orbital,Hubble Space Telescope,raw
+3,0.30000000000000004,0.4,0.34563735127449036,0.0,46,full_orbital,Hubble Space Telescope,raw
+4,0.4,0.5,0.4559091329574585,0.07692307692307693,39,full_orbital,Hubble Space Telescope,raw
+5,0.5,0.6000000000000001,0.548460841178894,0.23684210526315788,38,full_orbital,Hubble Space Telescope,raw
+6,0.6000000000000001,0.7000000000000001,0.6497663855552673,0.35135135135135137,37,full_orbital,Hubble Space Telescope,raw
+7,0.7000000000000001,0.8,0.7537619471549988,0.4166666666666667,36,full_orbital,Hubble Space Telescope,raw
+8,0.8,0.9,0.8567634224891663,0.6226415094339622,53,full_orbital,Hubble Space Telescope,raw
+9,0.9,1.0,0.9358444213867188,0.7272727272727273,55,full_orbital,Hubble Space Telescope,raw
+0,0.0,0.1,0.06065971404314041,0.0,56,full_orbital,Hubble Space Telescope,calibrated
+1,0.1,0.2,0.14013944566249847,0.0,56,full_orbital,Hubble Space Telescope,calibrated
+2,0.2,0.30000000000000004,0.2469325214624405,0.17073170731707318,41,full_orbital,Hubble Space Telescope,calibrated
+3,0.30000000000000004,0.4,0.34529033303260803,0.2,25,full_orbital,Hubble Space Telescope,calibrated
+4,0.4,0.5,0.4457401931285858,0.4074074074074074,27,full_orbital,Hubble Space Telescope,calibrated
+5,0.5,0.6000000000000001,0.5418083667755127,0.25,16,full_orbital,Hubble Space Telescope,calibrated
+6,0.6000000000000001,0.7000000000000001,0.6485387086868286,0.46153846153846156,26,full_orbital,Hubble Space Telescope,calibrated
+7,0.7000000000000001,0.8,0.7444452047348022,0.35,20,full_orbital,Hubble Space Telescope,calibrated
+8,0.8,0.9,0.8549566864967346,0.7368421052631579,38,full_orbital,Hubble Space Telescope,calibrated
+9,0.9,1.0,0.9424207210540771,0.75,52,full_orbital,Hubble Space Telescope,calibrated

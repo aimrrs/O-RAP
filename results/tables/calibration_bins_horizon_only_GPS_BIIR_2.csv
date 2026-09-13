@@ -1,0 +1,21 @@
+bin,bin_lower,bin_upper,mean_predicted,observed_frequency,count,model,held_out_satellite,calibration
+0,0.0,0.1,,,0,horizon_only,GPS BIIR-2,raw
+1,0.1,0.2,,,0,horizon_only,GPS BIIR-2,raw
+2,0.2,0.30000000000000004,0.28207632899284363,0.0,65,horizon_only,GPS BIIR-2,raw
+3,0.30000000000000004,0.4,0.37933698296546936,0.0,67,horizon_only,GPS BIIR-2,raw
+4,0.4,0.5,,,0,horizon_only,GPS BIIR-2,raw
+5,0.5,0.6000000000000001,0.5228435397148132,0.0,75,horizon_only,GPS BIIR-2,raw
+6,0.6000000000000001,0.7000000000000001,,,0,horizon_only,GPS BIIR-2,raw
+7,0.7000000000000001,0.8,0.7089437246322632,0.015384615384615385,65,horizon_only,GPS BIIR-2,raw
+8,0.8,0.9,,,0,horizon_only,GPS BIIR-2,raw
+9,0.9,1.0,,,0,horizon_only,GPS BIIR-2,raw
+0,0.0,0.1,0.06917612254619598,0.0,132,horizon_only,GPS BIIR-2,calibrated
+1,0.1,0.2,0.19186724722385406,0.0,75,horizon_only,GPS BIIR-2,calibrated
+2,0.2,0.30000000000000004,,,0,horizon_only,GPS BIIR-2,calibrated
+3,0.30000000000000004,0.4,,,0,horizon_only,GPS BIIR-2,calibrated
+4,0.4,0.5,0.4419873356819153,0.015384615384615385,65,horizon_only,GPS BIIR-2,calibrated
+5,0.5,0.6000000000000001,,,0,horizon_only,GPS BIIR-2,calibrated
+6,0.6000000000000001,0.7000000000000001,,,0,horizon_only,GPS BIIR-2,calibrated
+7,0.7000000000000001,0.8,,,0,horizon_only,GPS BIIR-2,calibrated
+8,0.8,0.9,,,0,horizon_only,GPS BIIR-2,calibrated
+9,0.9,1.0,,,0,horizon_only,GPS BIIR-2,calibrated

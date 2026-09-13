@@ -1,0 +1,21 @@
+bin,bin_lower,bin_upper,mean_predicted,observed_frequency,count,model,held_out_satellite,calibration
+0,0.0,0.1,,,0,horizon_only,NOAA 19,raw
+1,0.1,0.2,,,0,horizon_only,NOAA 19,raw
+2,0.2,0.30000000000000004,0.2700219750404358,0.0,175,horizon_only,NOAA 19,raw
+3,0.30000000000000004,0.4,0.37784841656684875,0.0,167,horizon_only,NOAA 19,raw
+4,0.4,0.5,,,0,horizon_only,NOAA 19,raw
+5,0.5,0.6000000000000001,0.5188239812850952,0.0,163,horizon_only,NOAA 19,raw
+6,0.6000000000000001,0.7000000000000001,,,0,horizon_only,NOAA 19,raw
+7,0.7000000000000001,0.8,0.7299562096595764,0.0,154,horizon_only,NOAA 19,raw
+8,0.8,0.9,,,0,horizon_only,NOAA 19,raw
+9,0.9,1.0,,,0,horizon_only,NOAA 19,raw
+0,0.0,0.1,0.056917570531368256,0.0,175,horizon_only,NOAA 19,calibrated
+1,0.1,0.2,0.10999709367752075,0.0,167,horizon_only,NOAA 19,calibrated
+2,0.2,0.30000000000000004,0.22081208229064941,0.0,163,horizon_only,NOAA 19,calibrated
+3,0.30000000000000004,0.4,,,0,horizon_only,NOAA 19,calibrated
+4,0.4,0.5,,,0,horizon_only,NOAA 19,calibrated
+5,0.5,0.6000000000000001,0.5169199109077454,0.0,154,horizon_only,NOAA 19,calibrated
+6,0.6000000000000001,0.7000000000000001,,,0,horizon_only,NOAA 19,calibrated
+7,0.7000000000000001,0.8,,,0,horizon_only,NOAA 19,calibrated
+8,0.8,0.9,,,0,horizon_only,NOAA 19,calibrated
+9,0.9,1.0,,,0,horizon_only,NOAA 19,calibrated

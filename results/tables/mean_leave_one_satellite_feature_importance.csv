@@ -1,0 +1,16 @@
+feature,display_name,normalized_gain
+mean_motion,Mean motion,0.23629534487564355
+semimajor_axis,Semimajor axis,0.2050323896936828
+horizon_hours,Prediction horizon,0.11932897258707902
+apoapsis,Apoapsis,0.0839220162381628
+eccentricity,Eccentricity,0.07630214834154325
+period,Period,0.05101356172874869
+inclination,Inclination,0.05039747414154566
+periapsis,Periapsis,0.043487481963461826
+mean_motion_dot,Mean motion dot,0.03374862971506324
+bstar,BSTAR,0.02937637252771654
+source_tle_age_hours,TLE age,0.02460172236111434
+ra_of_asc_node,RA of ascending node,0.01762290515170789
+arg_of_pericenter,Argument of pericenter,0.014907561229740367
+mean_anomaly,Mean anomaly,0.013963419444790024
+mean_motion_ddot,Mean motion d-dot,0.0

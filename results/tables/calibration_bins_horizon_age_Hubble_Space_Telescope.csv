@@ -1,0 +1,21 @@
+bin,bin_lower,bin_upper,mean_predicted,observed_frequency,count,model,held_out_satellite,calibration
+0,0.0,0.1,0.07726074010133743,0.14285714285714285,21,horizon_age,Hubble Space Telescope,raw
+1,0.1,0.2,0.15926310420036316,0.2682926829268293,41,horizon_age,Hubble Space Telescope,raw
+2,0.2,0.30000000000000004,0.2495643049478531,0.10810810810810811,74,horizon_age,Hubble Space Telescope,raw
+3,0.30000000000000004,0.4,0.34395408630371094,0.13636363636363635,66,horizon_age,Hubble Space Telescope,raw
+4,0.4,0.5,0.44207748770713806,0.34615384615384615,52,horizon_age,Hubble Space Telescope,raw
+5,0.5,0.6000000000000001,0.5436126589775085,0.4594594594594595,37,horizon_age,Hubble Space Telescope,raw
+6,0.6000000000000001,0.7000000000000001,0.6486750841140747,0.7105263157894737,38,horizon_age,Hubble Space Telescope,raw
+7,0.7000000000000001,0.8,0.7451268434524536,0.7037037037037037,27,horizon_age,Hubble Space Telescope,raw
+8,0.8,0.9,0.8852235078811646,1.0,1,horizon_age,Hubble Space Telescope,raw
+9,0.9,1.0,,,0,horizon_age,Hubble Space Telescope,raw
+0,0.0,0.1,0.06193771958351135,0.1564625850340136,147,horizon_age,Hubble Space Telescope,calibrated
+1,0.1,0.2,0.1390572339296341,0.25892857142857145,112,horizon_age,Hubble Space Telescope,calibrated
+2,0.2,0.30000000000000004,0.24503687024116516,0.48214285714285715,56,horizon_age,Hubble Space Telescope,calibrated
+3,0.30000000000000004,0.4,0.3478805422782898,0.8125,32,horizon_age,Hubble Space Telescope,calibrated
+4,0.4,0.5,0.4425090551376343,0.7777777777777778,9,horizon_age,Hubble Space Telescope,calibrated
+5,0.5,0.6000000000000001,,,0,horizon_age,Hubble Space Telescope,calibrated
+6,0.6000000000000001,0.7000000000000001,0.6154371500015259,1.0,1,horizon_age,Hubble Space Telescope,calibrated
+7,0.7000000000000001,0.8,,,0,horizon_age,Hubble Space Telescope,calibrated
+8,0.8,0.9,,,0,horizon_age,Hubble Space Telescope,calibrated
+9,0.9,1.0,,,0,horizon_age,Hubble Space Telescope,calibrated
