@@ -36,8 +36,6 @@ The final dataset contains **17,263 evaluation samples**.
 data/          Research datasets and processed data
 src/           Data processing and experiment scripts
 results/       Experimental results, tables, and figures
-experiments/   Experimental work
-paper/         Research paper materials
 ```
 
 ## Note
