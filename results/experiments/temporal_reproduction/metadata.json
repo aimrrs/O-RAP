@@ -1,0 +1,65 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sgp4": "2.27",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2"
+  },
+  "base_commit": "7471ef3c9ed2b2f2ada5626aa42f1ab8acfbcf2f",
+  "source_tree_had_uncommitted_audit_changes": true,
+  "input_split_sha256": {
+    "test_temporal.csv": "8aad3241c987b93486650c304b8f4bf561caec34a9c3261d715b3644e168a0f3",
+    "train_temporal.csv": "e700fd4706d3a90eb8f3c27644ea98a97a4c5ce768501de7ec656b5da7efa7fa",
+    "validation_temporal.csv": "31a05edea8046809247aa21baba58fec793d350cc86d6e1c9159f8ce18b88f2e"
+  },
+  "command": ".\\venv\\Scripts\\python.exe src\\run_xgboost.py with ORAP_RESULTS_DIR set to results/experiments/temporal_reproduction/tables",
+  "script_sha256": {
+    "run_xgboost.py": "eefa2752ce418e7fe9b19e79580b0c39b08e6fcbd2e31f80d49e3a29e1240cc9"
+  },
+  "threshold_selection": "training split only",
+  "result_rows": [
+    {
+      "split": "Train",
+      "threshold": 0.6599999999999999,
+      "accuracy": 0.9207553132653868,
+      "precision": 0.7984779299847793,
+      "recall": 0.884952766531714,
+      "f1": 0.8394943190910545,
+      "roc_auc": 0.9737276145549616,
+      "pr_auc": 0.9145677225001392,
+      "brier": 0.0713315531611442,
+      "positive_rate": 0.2341787153353875,
+      "predicted_positive_rate": 0.2595401753970135
+    },
+    {
+      "split": "Validation",
+      "threshold": 0.6599999999999999,
+      "accuracy": 0.9094977623073098,
+      "precision": 0.8059701492537313,
+      "recall": 0.6242774566473989,
+      "f1": 0.7035830618892508,
+      "roc_auc": 0.9467930358103768,
+      "pr_auc": 0.7928940020392408,
+      "brier": 0.0746112763881683,
+      "positive_rate": 0.1720537046245649,
+      "predicted_positive_rate": 0.1332670313276976
+    },
+    {
+      "split": "Test",
+      "threshold": 0.6599999999999999,
+      "accuracy": 0.8801541425818883,
+      "precision": 0.6578171091445427,
+      "recall": 0.5334928229665071,
+      "f1": 0.5891677675033025,
+      "roc_auc": 0.9211888974116084,
+      "pr_auc": 0.6214600476800616,
+      "brier": 0.09011772274971,
+      "positive_rate": 0.1610789980732177,
+      "predicted_positive_rate": 0.130635838150289
+    }
+  ]
+}

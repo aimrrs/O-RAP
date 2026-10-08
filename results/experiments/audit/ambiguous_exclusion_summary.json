@@ -1,0 +1,15 @@
+{
+  "reason": "Different complete TLE records share the source-event key; feature matching cannot uniquely choose a source TLE, so all matching labels are excluded.",
+  "source_key": {
+    "norad_id": 25544,
+    "creation_utc": "2025-01-25T19:06:24+00:00",
+    "epoch_utc": "2025-01-25T04:55:56.509824+00:00"
+  },
+  "ambiguous_unique_tle_records": 2,
+  "excluded_label_rows": 6,
+  "excluded_labels_by_horizon_hours": {
+    "6": 2,
+    "24": 2,
+    "48": 2
+  }
+}

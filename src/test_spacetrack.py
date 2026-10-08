@@ -1,8 +1,11 @@
+import os
 import requests
 from datetime import datetime, timezone
 
-USERNAME = "aimrrs404@gmail.com"
-PASSWORD = "qwertyuioplkjhgfdsa"
+USERNAME = os.environ.get("SPACE_TRACK_IDENTITY")
+PASSWORD = os.environ.get("SPACE_TRACK_PASSWORD")
+if not USERNAME or not PASSWORD:
+    raise RuntimeError("Set SPACE_TRACK_IDENTITY and SPACE_TRACK_PASSWORD before using Space-Track.")
 
 LOGIN_URL = "https://www.space-track.org/ajaxauth/login"
 HISTORY_URL = (

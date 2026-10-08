@@ -1,0 +1,44 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sgp4": "2.27",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2"
+  },
+  "base_commit": "7471ef3c9ed2b2f2ada5626aa42f1ab8acfbcf2f",
+  "source_tree_had_uncommitted_audit_changes": true,
+  "input_split_sha256": {
+    "test_temporal.csv": "8aad3241c987b93486650c304b8f4bf561caec34a9c3261d715b3644e168a0f3",
+    "train_temporal.csv": "e700fd4706d3a90eb8f3c27644ea98a97a4c5ce768501de7ec656b5da7efa7fa",
+    "validation_temporal.csv": "31a05edea8046809247aa21baba58fec793d350cc86d6e1c9159f8ce18b88f2e"
+  },
+  "command": ".\\venv\\Scripts\\python.exe src\\run_final_tuned_xgboost.py with ORAP_RESULTS_DIR set to results/experiments/loso_reproduction/tables and PYTHONIOENCODING=utf-8",
+  "script_sha256": {
+    "run_final_tuned_xgboost.py": "313162b16621afd77f9edb87387a8a179fcf69e606cce9bf8a2032b759053157"
+  },
+  "selected_configuration": "strong_regularization",
+  "held_out_satellite_folds": 6,
+  "mean_test_metrics": {
+    "raw_accuracy": 0.8258588959366167,
+    "raw_precision": 0.2597471677258911,
+    "raw_recall": 0.38720718165160223,
+    "raw_f1": 0.2697563954831397,
+    "raw_roc_auc": 0.8359938618323339,
+    "raw_pr_auc": 0.38715235178013635,
+    "raw_brier": 0.11280079255811865,
+    "raw_logloss": 0.3519885105391343,
+    "calibrated_accuracy": 0.8580408727319444,
+    "calibrated_precision": 0.28612975788652656,
+    "calibrated_recall": 0.28948024429764424,
+    "calibrated_f1": 0.24515850997926036,
+    "calibrated_roc_auc": 0.8359938618323339,
+    "calibrated_pr_auc": 0.38715235178013635,
+    "calibrated_brier": 0.1015849138166231,
+    "calibrated_logloss": 0.35677462932653725
+  },
+  "threshold_and_calibration_data": "per-fold non-held-out validation rows only; no held-out test labels used"
+}

@@ -1,0 +1,12 @@
+{
+  "experiment": "temporal_xgboost_platt_calibration",
+  "held_out_satellite_subset": "ISS",
+  "calibration_fit_split": "validation_temporal (September-October 2025), all satellites",
+  "calibration_fit_samples": 2011,
+  "calibration_fit_positive_rate": 0.1720537046245649,
+  "calibration_method": "LogisticRegression on logit(raw_probability)",
+  "logistic_regression_C": 1000000.0,
+  "calibration_coefficient": 1.2624715566635132,
+  "calibration_intercept": -0.720819890499115,
+  "test_labels_used_for_calibration": false
+}

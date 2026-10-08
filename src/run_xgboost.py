@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 
 import numpy as np
 import pandas as pd
@@ -20,7 +21,7 @@ from sklearn.metrics import (
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 SPLIT_DIR = BASE_DIR / "data" / "processed" / "splits"
-RESULTS_DIR = BASE_DIR / "results" / "tables"
+RESULTS_DIR = Path(os.environ.get("ORAP_RESULTS_DIR", BASE_DIR / "results" / "tables"))
 
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 

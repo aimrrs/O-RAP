@@ -1,0 +1,146 @@
+{
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {},
+  "source_commit": "7471ef3c9ed2b2f2ada5626aa42f1ab8acfbcf2f",
+  "source_data_sha256": {
+    "20580_Hubble_Space_Telescope_2025.csv": "055bc95e062286795b753660ce3567df83b311073f76cba67c209a047b8b6b52",
+    "24876_TDRS-5_2025.csv": "f6b2b9f9fc073a78c0075ffbebde3edb7c40b73dda772c98e13f55f661cd0a8e",
+    "25544_ISS_2025.csv": "d8b827135214d9b0a772914840aba23271f0fe1c1162d4da50a7e2ca3d15bac3",
+    "26407_GPS_BIIR-2_2025.csv": "d22c8f4303c2e32b2fb81797df254f6ee0b76035e037dc6d51bed334238470f4",
+    "33591_NOAA_19_2025.csv": "31289e1458298264f47e8a73ea5b42d619e568709f61abf5d0f31039f8e6af29",
+    "39634_Sentinel-1A_2025.csv": "08227535ca8a08b3de31e4193530d43c890053cfb1170e6c33f6e30992907425"
+  },
+  "protocol": "Temporal source-creation splits Jan-Aug train, Sep-Oct validation, Nov-Dec test. LOSO folds exclude the held-out satellite from train and validation; hyperparameters pooled across validation folds; Platt calibration and F1 threshold fitted on validation only.",
+  "cases": [
+    {
+      "experiment": "error_threshold_0p5km",
+      "error_threshold_km": 0.5,
+      "maximum_reference_delay_hours": 6.0,
+      "samples_by_split": {
+        "train_temporal": 12657,
+        "validation_temporal": 2011,
+        "test_temporal": 2595
+      },
+      "selected_configuration": "strong_regularization",
+      "loso_folds": 6,
+      "test_labels_used_for_selection": false,
+      "metrics": "six held-out-satellite folds; configuration, calibration, and F1 threshold use non-held-out training/validation only"
+    },
+    {
+      "experiment": "error_threshold_2km",
+      "error_threshold_km": 2.0,
+      "maximum_reference_delay_hours": 6.0,
+      "samples_by_split": {
+        "train_temporal": 12657,
+        "validation_temporal": 2011,
+        "test_temporal": 2595
+      },
+      "selected_configuration": "strong_regularization",
+      "loso_folds": 6,
+      "test_labels_used_for_selection": false,
+      "metrics": "six held-out-satellite folds; configuration, calibration, and F1 threshold use non-held-out training/validation only"
+    },
+    {
+      "experiment": "error_threshold_5km",
+      "error_threshold_km": 5.0,
+      "maximum_reference_delay_hours": 6.0,
+      "samples_by_split": {
+        "train_temporal": 12657,
+        "validation_temporal": 2011,
+        "test_temporal": 2595
+      },
+      "selected_configuration": "more_capacity",
+      "loso_folds": 6,
+      "test_labels_used_for_selection": false,
+      "metrics": "six held-out-satellite folds; configuration, calibration, and F1 threshold use non-held-out training/validation only"
+    },
+    {
+      "experiment": "reference_delay_1h",
+      "error_threshold_km": 1.0,
+      "maximum_reference_delay_hours": 1.0,
+      "samples_by_split": {
+        "train_temporal": 3601,
+        "validation_temporal": 476,
+        "test_temporal": 630
+      },
+      "selected_configuration": "low_depth",
+      "loso_folds": 6,
+      "test_labels_used_for_selection": false,
+      "metrics": "six held-out-satellite folds; configuration, calibration, and F1 threshold use non-held-out training/validation only"
+    },
+    {
+      "experiment": "reference_delay_2h",
+      "error_threshold_km": 1.0,
+      "maximum_reference_delay_hours": 2.0,
+      "samples_by_split": {
+        "train_temporal": 5955,
+        "validation_temporal": 838,
+        "test_temporal": 1076
+      },
+      "selected_configuration": "low_depth",
+      "loso_folds": 6,
+      "test_labels_used_for_selection": false,
+      "metrics": "six held-out-satellite folds; configuration, calibration, and F1 threshold use non-held-out training/validation only"
+    },
+    {
+      "experiment": "reference_delay_4h",
+      "error_threshold_km": 1.0,
+      "maximum_reference_delay_hours": 4.0,
+      "samples_by_split": {
+        "train_temporal": 10020,
+        "validation_temporal": 1524,
+        "test_temporal": 1968
+      },
+      "selected_configuration": "strong_regularization",
+      "loso_folds": 6,
+      "test_labels_used_for_selection": false,
+      "metrics": "six held-out-satellite folds; configuration, calibration, and F1 threshold use non-held-out training/validation only"
+    },
+    {
+      "experiment": "error_threshold_1km",
+      "error_threshold_km": 1.0,
+      "maximum_reference_delay_hours": 6.0,
+      "samples_by_split": {
+        "train_temporal": 12657,
+        "validation_temporal": 2011,
+        "test_temporal": 2595
+      },
+      "selected_configuration": "strong_regularization",
+      "loso_folds": 6,
+      "source": "Independent reproduction of the 1 km / 6 h baseline, recorded in loso_reproduction/tables.",
+      "test_labels_used_for_selection": false
+    },
+    {
+      "experiment": "reference_delay_6h",
+      "error_threshold_km": 1.0,
+      "maximum_reference_delay_hours": 6.0,
+      "samples_by_split": {
+        "train_temporal": 12657,
+        "validation_temporal": 2011,
+        "test_temporal": 2595
+      },
+      "selected_configuration": "strong_regularization",
+      "loso_folds": 6,
+      "source": "Independent reproduction of the 1 km / 6 h baseline, recorded in loso_reproduction/tables.",
+      "test_labels_used_for_selection": false
+    }
+  ],
+  "summary_metrics_are_unweighted_means_of_six_held_out_satellite_folds": true,
+  "reproducibility_scripts_sha256": {
+    "run_final_tuned_xgboost.py": "313162b16621afd77f9edb87387a8a179fcf69e606cce9bf8a2032b759053157",
+    "run_sensitivity_experiments.py": "18c91c00ec28e1ee1a5da7da04c5f29415497dd5b86326954201a532719f494f",
+    "aggregate_sensitivity_results.py": "a3a8126c64ecd33726063363b0dfc60f1b99a77ea0aa17425c2f41b10f707afe"
+  },
+  "source_commit_after_checkpoint": "7471ef3c9ed2b2f2ada5626aa42f1ab8acfbcf2f",
+  "source_git_head_during_aggregation": "7471ef3c9ed2b2f2ada5626aa42f1ab8acfbcf2f",
+  "package_versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "sgp4": "2.27",
+    "xgboost": "3.4.1",
+    "matplotlib": "3.11.2"
+  },
+  "source_code_was_modified_since_base_commit": true
+}

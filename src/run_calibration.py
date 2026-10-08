@@ -1,5 +1,7 @@
 
 from pathlib import Path
+import os
+import json
 
 import numpy as np
 import pandas as pd
@@ -20,7 +22,7 @@ from sklearn.metrics import (
 BASE_DIR = Path(__file__).resolve().parents[1]
 
 SPLIT_DIR = BASE_DIR / "data" / "processed" / "splits"
-RESULTS_DIR = BASE_DIR / "results" / "tables"
+RESULTS_DIR = Path(os.environ.get("ORAP_RESULTS_DIR", BASE_DIR / "results" / "tables"))
 
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -469,6 +471,20 @@ calibration_table.to_csv(
     calibration_file,
     index=False,
 )
+
+parameters = {
+    "experiment": "temporal_xgboost_platt_calibration",
+    "held_out_satellite_subset": HELD_OUT_SATELLITE,
+    "calibration_fit_split": "validation_temporal (September-October 2025), all satellites",
+    "calibration_fit_samples": int(len(y_val)),
+    "calibration_fit_positive_rate": float(y_val.mean()),
+    "calibration_method": "LogisticRegression on logit(raw_probability)",
+    "logistic_regression_C": 1e6,
+    "calibration_coefficient": float(calibration_model.coef_[0][0]),
+    "calibration_intercept": float(calibration_model.intercept_[0]),
+    "test_labels_used_for_calibration": False,
+}
+(RESULTS_DIR / "calibration_parameters.json").write_text(json.dumps(parameters, indent=2), encoding="utf-8")
 
 
 # ============================================================

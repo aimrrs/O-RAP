@@ -1,4 +1,5 @@
 import requests
+import os
 import pandas as pd
 import numpy as np
 
@@ -11,8 +12,10 @@ from sgp4.api import Satrec, jday
 
 NORAD_ID = 25544
 
-USERNAME = "aimrrs404@gmail.com"
-PASSWORD = "qwertyuioplkjhgfdsa"
+USERNAME = os.environ.get("SPACE_TRACK_IDENTITY")
+PASSWORD = os.environ.get("SPACE_TRACK_PASSWORD")
+if not USERNAME or not PASSWORD:
+    raise RuntimeError("Set SPACE_TRACK_IDENTITY and SPACE_TRACK_PASSWORD before running this live verification.")
 
 HISTORY_URL = (
     "https://www.space-track.org/basicspacedata/query/"

@@ -1,3 +1,4 @@
+import os
 import requests
 import pandas as pd
 from pathlib import Path
@@ -29,8 +30,10 @@ LOGIN_URL = (
 # Credentials
 # --------------------------------------------------
 
-USERNAME = "aimrrs404@gmail.com"
-PASSWORD = "qwertyuioplkjhgfdsa"
+USERNAME = os.environ.get("SPACE_TRACK_IDENTITY")
+PASSWORD = os.environ.get("SPACE_TRACK_PASSWORD")
+if not USERNAME or not PASSWORD:
+    raise RuntimeError("Set SPACE_TRACK_IDENTITY and SPACE_TRACK_PASSWORD before using Space-Track.")
 
 # --------------------------------------------------
 # Login
