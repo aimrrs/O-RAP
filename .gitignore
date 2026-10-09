@@ -17,3 +17,6 @@ Desktop.ini
 results/experiments/paper_final/nested_loso/nested_loso_test_predictions.csv
 results/experiments/paper_final/nested_loso/nested_loso_oof_calibration_predictions.csv
 results/experiments/paper_final/chronological/chronological_test_predictions.csv
+
+# Isolated local environment for the optional research demo
+.webapp-venv/

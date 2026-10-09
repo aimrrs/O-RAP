@@ -58,6 +58,7 @@ src/reproducibility/                   Paper-aligned corrected experiment script
 results/tables/                        Previously saved project tables (preserved)
 results/figures/                       Previously saved project figures (preserved)
 results/experiments/                   Historical experiments and paper_final results
+webapp/                               Local demo and experiment-results pages
 ```
 
 `venv/` and `.venv/` are local environments and are ignored by Git. `requirements.txt` pins the installed project dependencies.
@@ -106,3 +107,7 @@ Download, coverage, and live verification scripts require Space-Track credential
 ## Citation and reuse
 
 Cite the associated paper and the Space-Track source data when reusing results. This repository currently has no explicit code license. Authors should choose and add an appropriate license before inviting code reuse. The paper-aligned outputs are research artifacts, not an operational orbit or conjunction product.
+
+## Web app: demo and experiment report
+
+A local web interface lives in `webapp/`. It has two pages: the interactive TLE/SGP4 research prototype at `/`, and a methods/results/limitations report at `/experiments`. Follow `webapp/README.md` for its isolated dependencies and launch command. The bundled live-model artifact is separate from the paper-aligned metrics and returns an uncalibrated model score; it must not be described as a validated probability or operational decision. The app binds to localhost by default and does not need to be hosted for reproducing the study.

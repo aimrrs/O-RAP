@@ -1,0 +1,36 @@
+{
+  "project": "O-RAP",
+  "target": "P(error > 1 km)",
+  "error_threshold_km": 1.0,
+  "features": [
+    "horizon_hours",
+    "source_tle_age_hours",
+    "mean_motion",
+    "eccentricity",
+    "inclination",
+    "ra_of_asc_node",
+    "arg_of_pericenter",
+    "mean_anomaly",
+    "bstar",
+    "mean_motion_dot",
+    "mean_motion_ddot",
+    "semimajor_axis",
+    "period",
+    "apoapsis",
+    "periapsis"
+  ],
+  "model_version": "orap-xgb-v1.0",
+  "training_period": "2025-01 through 2025-08",
+  "calibration_period": "2025-09 through 2025-10",
+  "xgboost_configuration": {
+    "n_estimators": 500,
+    "max_depth": 3,
+    "learning_rate": 0.03,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.5,
+    "reg_lambda": 5,
+    "random_state": 42
+  }
+}
