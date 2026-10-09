@@ -1,0 +1,7 @@
+outer_satellite,n_test,test_positives,threshold_rule,predicted_positive_rate,precision,recall,f1
+GPS BIIR-2,272,1,predict positive for every sample,1.0,0.003676470588235294,1.0,0.007326007326007326
+Hubble Space Telescope,357,113,predict positive for every sample,1.0,0.3165266106442577,1.0,0.4808510638297872
+ISS,520,213,predict positive for every sample,1.0,0.4096153846153846,1.0,0.5811732605729877
+NOAA 19,659,0,predict positive for every sample,1.0,0.0,0.0,0.0
+Sentinel-1A,623,87,predict positive for every sample,1.0,0.13964686998394862,1.0,0.24507042253521127
+TDRS-5,164,4,predict positive for every sample,1.0,0.024390243902439025,1.0,0.047619047619047616

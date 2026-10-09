@@ -1,6 +1,33 @@
+# Paper-aligned release branch audit (2026-10-09)
+
+This release work started from a clean `main` checkout at `be74118badb041ee491780c2bf8afdc5c7a36ae5`, tracking `origin/main` at `https://github.com/aimrrs/O-RAP.git`. A complete-history Git bundle was created and verified before edits; the checkpoint is retained outside the repository.
+
+The earlier README described older headline results and a different LOSO experiment. To preserve prior scientific evidence, the previous result files remain intact. The current paper-aligned experiment is isolated in `results/experiments/paper_final/`, with standalone reproduction scripts in `src/reproducibility/`.
+
+## Reproduced in the project's pinned environment
+
+- Python 3.14.7; NumPy 2.5.3; pandas 3.0.5; scikit-learn 1.9.1; XGBoost 3.4.1; SciPy 1.18.1; SGP4 2.27; Matplotlib 3.11.2.
+- Processed input SHA-256 values match the checked-in `paper_final/nested_loso/nested_loso_metadata.json`.
+- Nested LOSO completed for six satellites, purging 23 training and 9 validation rows at reference-availability cutoffs; 2,595 outer test rows. Raw XGBoost macro ROC-AUC/AP/F1: 0.8538/0.3895/0.1964.
+- Purged chronological experiment completed with 12,634 train / 2,002 validation / 2,595 test rows and 418 test positives. XGBoost threshold 0.67; pooled test ROC-AUC/AP/F1: 0.9240/0.6379/0.5893.
+- Nested summaries and diagnostics include per-fold Platt parameters, flag-all F1, Brier skill, paired ranking differences, and a reliability plot.
+
+The reproduction scripts generate local sample-level predictions to derive summaries; those files are ignored by Git. Existing historical results and legacy pooled-validation sensitivity outputs were not overwritten or deleted.
+
+## Publication caveats
+
+The proxy target is not independent physical truth. The sample covers six satellites in one year and is not stratified by orbital regime. Space-Track redistribution terms must be checked for the intended use. This repository has no explicit code license. A Space-Track credential was committed in older history and should be rotated if that has not already been completed; this branch does not rewrite Git history.
+
+## Verification
+
+The runs above completed in the project's `venv`; all four reproduction scripts passed Python byte-compilation, and `git diff --check` passed. The earlier audit record follows unchanged for historical context.
+
+---
 # Reproducibility audit and change log
 
 ## Checkpoint
+
+This checkpoint statement belongs to the earlier audit record; the starting commit for the current release branch is documented above.
 
 Before edits, `main` was clean at commit `7471ef3c9ed2b2f2ada5626aa42f1ab8acfbcf2f`, tracking `origin/main` (`https://github.com/aimrrs/O-RAP.git`). A recoverable Git bundle and state record were saved outside the repository at `D:\O-RAP\o-rap-pre-audit-20261008\`.
 

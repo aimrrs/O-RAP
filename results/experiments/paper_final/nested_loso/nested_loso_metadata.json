@@ -1,0 +1,110 @@
+{
+  "protocol": "Nested outer satellite holdout; inner leave-one-satellite-out selection. Before model fitting, training rows whose reference_creation reaches 2025-09-01 UTC and validation rows whose reference_creation reaches 2025-11-01 UTC are purged. For each outer satellite, inner OOF predictions from the other five satellites fit Platt calibration and select F1 thresholds. Final models train on purged Jan-Aug rows from five development satellites; outer Nov-Dec labels are used only for final scoring.",
+  "calibration": "Platt scaling is fitted on cross-satellite out-of-fold decision margins (XGBoost raw margins and LR decision_function); this avoids clipping small probabilities before calibration. The OOF base models are trained on four development satellites, while the final outer model is trained on five.",
+  "baseline": "Regularized logistic regression on all 15 features; median imputation and standardization fitted within each training fold; C selected by pooled inner AP with Brier tie-break.",
+  "ranking_baselines": "Raw requested horizon and total propagation span (TLE age + horizon); thresholds selected from cross-satellite development OOF validation predictions.",
+  "probability_baseline": "Constant training-prevalence predictor; prevalence is calculated only from outer development training data.",
+  "threshold_rule": "197 probability thresholds from 0.01 through 0.99; F1 maximized on cross-satellite OOF development predictions.",
+  "purge": {
+    "train_rows_original": 12657,
+    "train_rows_after_reference_cutoff_purge": 12634,
+    "train_rows_purged": 23,
+    "validation_rows_original": 2011,
+    "validation_rows_after_reference_cutoff_purge": 2002,
+    "validation_rows_purged": 9,
+    "test_rows": 2595,
+    "ambiguous_labels_excluded": 6,
+    "train_reference_cutoff_utc": "2025-09-01T00:00:00+00:00",
+    "validation_reference_cutoff_utc": "2025-11-01T00:00:00+00:00"
+  },
+  "satellites": [
+    "GPS BIIR-2",
+    "Hubble Space Telescope",
+    "ISS",
+    "NOAA 19",
+    "Sentinel-1A",
+    "TDRS-5"
+  ],
+  "xgb_candidates": {
+    "baseline": {
+      "n_estimators": 300,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "min_child_weight": 1,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.0,
+      "reg_lambda": 1.0
+    },
+    "shallow_regularized": {
+      "n_estimators": 400,
+      "max_depth": 3,
+      "learning_rate": 0.05,
+      "min_child_weight": 3,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0
+    },
+    "medium_regularized": {
+      "n_estimators": 400,
+      "max_depth": 4,
+      "learning_rate": 0.05,
+      "min_child_weight": 3,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0
+    },
+    "strong_regularization": {
+      "n_estimators": 500,
+      "max_depth": 3,
+      "learning_rate": 0.03,
+      "min_child_weight": 5,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.5,
+      "reg_lambda": 5.0
+    },
+    "low_depth": {
+      "n_estimators": 500,
+      "max_depth": 2,
+      "learning_rate": 0.05,
+      "min_child_weight": 3,
+      "subsample": 0.9,
+      "colsample_bytree": 0.9,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0
+    },
+    "more_capacity": {
+      "n_estimators": 400,
+      "max_depth": 5,
+      "learning_rate": 0.05,
+      "min_child_weight": 3,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 2.0
+    }
+  },
+  "logistic_C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "python": "3.14.7",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.1",
+  "xgboost": "3.4.1",
+  "scipy": "1.18.1",
+  "sgp4": "2.27",
+  "matplotlib": "3.11.2",
+  "seed": 42,
+  "input_sha256": {
+    "orap_multisatellite_labels_2025.csv": "5fb63bade6c3cdd4bb9b0a7ffa3a19ae6897d6fa56b10facf746b4f8c24746a6",
+    "orap_features_2025.csv": "0a838f6d23eb60329bc5f297f406ee2843b8592e28c5835b6c04c4ca4d7fb4a8"
+  }
+}

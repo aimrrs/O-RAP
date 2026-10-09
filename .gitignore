@@ -12,3 +12,8 @@ __pycache__/
 *.tmp
 Thumbs.db
 Desktop.ini
+
+# Local per-sample predictions from the paper-aligned reproduction
+results/experiments/paper_final/nested_loso/nested_loso_test_predictions.csv
+results/experiments/paper_final/nested_loso/nested_loso_oof_calibration_predictions.csv
+results/experiments/paper_final/chronological/chronological_test_predictions.csv
