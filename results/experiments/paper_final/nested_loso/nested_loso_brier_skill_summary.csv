@@ -1,0 +1,5 @@
+model,brier_skill_score
+logistic_regression_oof_platt,0.4191860039354447
+logistic_regression_raw,0.22005389614634074
+nested_xgboost_oof_platt,0.35737747713681606
+nested_xgboost_raw,0.3146157219090821

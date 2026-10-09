@@ -1,0 +1,51 @@
+{
+  "protocol": "Chronological Jan-Aug training, Sep-Oct validation, Nov-Dec test; train rows with reference_creation on/after Sep 1 purged; validation rows with reference_creation on/after Nov 1 purged. XGBoost configuration is fixed to 300 estimators, depth 4, learning rate 0.05. LR C is selected by forward-chaining AP on five Jan-Aug training folds. Probability thresholds are chosen on validation F1; horizon and total-span thresholds are chosen on validation F1. Test probabilities are raw and uncalibrated. Within-satellite ranking metrics are macro means over test satellites with both classes.",
+  "rows": {
+    "train": 12634,
+    "validation": 2002,
+    "test": 2595,
+    "train_purged": 23,
+    "validation_purged": 9
+  },
+  "features": [
+    "horizon_hours",
+    "source_tle_age_hours",
+    "mean_motion",
+    "eccentricity",
+    "inclination",
+    "ra_of_asc_node",
+    "arg_of_pericenter",
+    "mean_anomaly",
+    "bstar",
+    "mean_motion_dot",
+    "mean_motion_ddot",
+    "semimajor_axis",
+    "period",
+    "apoapsis",
+    "periapsis"
+  ],
+  "threshold_grid": [
+    0.01,
+    0.99,
+    197
+  ],
+  "lr_C_grid": [
+    0.01,
+    0.1,
+    1,
+    10,
+    100
+  ],
+  "lr_forward_folds": 5,
+  "lr_training_cv_ap": 0.731280117511495,
+  "seed": 42,
+  "python": "3.14.7",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.1",
+  "xgboost": "3.4.1",
+  "input_sha256": {
+    "orap_multisatellite_labels_2025.csv": "5fb63bade6c3cdd4bb9b0a7ffa3a19ae6897d6fa56b10facf746b4f8c24746a6",
+    "orap_features_2025.csv": "0a838f6d23eb60329bc5f297f406ee2843b8592e28c5835b6c04c4ca4d7fb4a8"
+  }
+}
