@@ -1,0 +1,70 @@
+O-RAP FEATURE EXTRACTION AUDIT
+=================================================================
+
+total_rows: 242,547
+successful_rows: 242,547
+failed_rows: 0
+positive_labels: 19,825
+negative_labels: 222,722
+
+FEATURES
+-----------------------------------------------------------------
+interval_hours
+mean_motion
+eccentricity
+inclination
+raan
+argument_of_pericenter
+mean_anomaly
+bstar
+mean_motion_dot
+mean_motion_ddot
+semimajor_axis
+orbital_period
+apoapsis
+periapsis
+
+SATELLITE DISTRIBUTION
+-----------------------------------------------------------------
+test,AQUA,rows=2556,positive=42,negative=2514
+test,AURA,rows=2016,positive=46,negative=1970
+test,COSMO-SKYMED 1,rows=3379,positive=204,negative=3175
+test,DMSP 5D-3 F16 (USA 172),rows=1755,positive=2,negative=1753
+test,ISS (ZARYA),rows=5505,positive=1702,negative=3803
+test,LANDSAT 8,rows=2090,positive=55,negative=2035
+test,METOP-A,rows=2053,positive=48,negative=2005
+test,NOAA-19,rows=2376,positive=15,negative=2361
+test,NOAA-20,rows=1539,positive=7,negative=1532
+test,RADARSAT-2,rows=3193,positive=63,negative=3130
+test,SENTINEL-2A,rows=1874,positive=42,negative=1832
+test,SUOMI NPP,rows=1985,positive=10,negative=1975
+test,TERRA,rows=3923,positive=46,negative=3877
+test,TERRASAR-X,rows=2138,positive=813,negative=1325
+train,AQUA,rows=11930,positive=689,negative=11241
+train,AURA,rows=9409,positive=750,negative=8659
+train,COSMO-SKYMED 1,rows=15771,positive=1158,negative=14613
+train,DMSP 5D-3 F16 (USA 172),rows=8192,positive=11,negative=8181
+train,ISS (ZARYA),rows=25692,positive=6680,negative=19012
+train,LANDSAT 8,rows=9752,positive=408,negative=9344
+train,METOP-A,rows=9579,positive=373,negative=9206
+train,NOAA-19,rows=11088,positive=95,negative=10993
+train,NOAA-20,rows=7183,positive=38,negative=7145
+train,RADARSAT-2,rows=14903,positive=297,negative=14606
+train,SENTINEL-2A,rows=8744,positive=271,negative=8473
+train,SUOMI NPP,rows=9263,positive=164,negative=9099
+train,TERRA,rows=18307,positive=726,negative=17581
+train,TERRASAR-X,rows=9978,positive=2639,negative=7339
+validation,AQUA,rows=2556,positive=20,negative=2536
+validation,AURA,rows=2015,positive=43,negative=1972
+validation,COSMO-SKYMED 1,rows=3379,positive=294,negative=3085
+validation,DMSP 5D-3 F16 (USA 172),rows=1755,positive=13,negative=1742
+validation,ISS (ZARYA),rows=5505,positive=889,negative=4616
+validation,LANDSAT 8,rows=2089,positive=42,negative=2047
+validation,METOP-A,rows=2052,positive=27,negative=2025
+validation,NOAA-19,rows=2375,positive=7,negative=2368
+validation,NOAA-20,rows=1538,positive=11,negative=1527
+validation,RADARSAT-2,rows=3193,positive=93,negative=3100
+validation,SENTINEL-2A,rows=1873,positive=29,negative=1844
+validation,SUOMI NPP,rows=1984,positive=7,negative=1977
+validation,TERRA,rows=3922,positive=27,negative=3895
+validation,TERRASAR-X,rows=2138,positive=929,negative=1209

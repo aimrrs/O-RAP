@@ -1,0 +1,28 @@
+{
+  "disagreement_thresholds_km": [
+    1.0,
+    5.0,
+    10.0
+  ],
+  "label_rule": "disagreement_km > threshold_km",
+  "features": [
+    "mean_motion",
+    "eccentricity",
+    "inclination",
+    "raan",
+    "argument_of_pericenter",
+    "mean_anomaly",
+    "bstar",
+    "mean_motion_dot",
+    "mean_motion_ddot",
+    "semimajor_axis",
+    "orbital_period",
+    "apoapsis",
+    "periapsis"
+  ],
+  "excluded_feature": "interval_hours",
+  "model": "XGBoost",
+  "calibration": "Platt scaling fitted on validation only",
+  "threshold_selection": "Maximum validation F1",
+  "random_state": 42
+}

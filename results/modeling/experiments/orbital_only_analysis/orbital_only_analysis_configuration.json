@@ -1,0 +1,50 @@
+{
+    "model": "orbital_only_xgboost",
+    "features": [
+        "mean_motion",
+        "eccentricity",
+        "inclination",
+        "raan",
+        "argument_of_pericenter",
+        "mean_anomaly",
+        "bstar",
+        "mean_motion_dot",
+        "mean_motion_ddot",
+        "semimajor_axis",
+        "orbital_period",
+        "apoapsis",
+        "periapsis"
+    ],
+    "calibration": "Platt scaling",
+    "calibration_training_partition": "validation",
+    "calibration_test_partition": "test",
+    "platt_coefficient": 1.0672096014022827,
+    "platt_intercept": -3.0652050971984863,
+    "validation_selected_f1_threshold": 0.1483718603849411,
+    "test_metrics_raw": {
+        "samples": 36382,
+        "positives": 3095,
+        "positive_rate_percent": 8.50695398823594,
+        "pr_auc": 0.2990550442043822,
+        "brier_score": 0.3118428587913513,
+        "log_loss": 0.8864779472351074,
+        "precision": 0.15508049617313274,
+        "recall": 0.9492730210016155,
+        "f1": 0.26660617059891106,
+        "threshold": 0.5,
+        "roc_auc": 0.8215750151191578
+    },
+    "test_metrics_calibrated": {
+        "samples": 36382,
+        "positives": 3095,
+        "positive_rate_percent": 8.50695398823594,
+        "pr_auc": 0.2990550442043822,
+        "brier_score": 0.07183919847011566,
+        "log_loss": 0.24243801832199097,
+        "precision": 0.21170631524901593,
+        "recall": 0.7993537964458804,
+        "f1": 0.3347540761788783,
+        "threshold": 0.1483718603849411,
+        "roc_auc": 0.8215750151191578
+    }
+}

@@ -1,22 +1,31 @@
+# Python environments
 .venv/
 venv/
+.webapp-venv/
+
+# Python cache and compiled files
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
+
+# Environment variables and secrets
 .env
 .env.*
 !.env.example
+
+# Temporary and log files
 *.log
 *.tmp
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE and operating system files
+.idea/
+.vscode/
 Thumbs.db
 Desktop.ini
-
-# Local per-sample predictions from the paper-aligned reproduction
-results/experiments/paper_final/nested_loso/nested_loso_test_predictions.csv
-results/experiments/paper_final/nested_loso/nested_loso_oof_calibration_predictions.csv
-results/experiments/paper_final/chronological/chronological_test_predictions.csv
-
-# Isolated local environment for the optional research demo
-.webapp-venv/

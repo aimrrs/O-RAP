@@ -1,0 +1,65 @@
+O-RAP CONSECUTIVE TLE SGP4 VALIDATION
+=================================================================
+
+SAMPLE DESIGN
+Total dataset pairs: 242,575
+Validation sample: 723
+Random seed: 42
+Random pairs per satellite/category: 3
+All pairs below five minutes included: Yes
+
+PROPAGATION RESULTS
+Successful pairs: 723
+Failed pairs: 0
+Successful propagation rate: 100.0000%
+
+POSITION DISAGREEMENT
+Positive pairs (>1 km): 106
+Negative pairs (<=1 km): 617
+Positive rate: 14.6611%
+Mean disagreement (km): 19.687398886
+Median disagreement (km): 0.056311069
+Maximum disagreement (km): 13073.874547731
+
+POSITION SANITY CHECK
+Finite successful outputs: 723
+LEO position norm check range: 6000 to 8000 km
+This is a diagnostic range, not a filtering rule.
+
+FAILURE DETAILS
+No failures in validation sample.
+
+TOP 20 DISAGREEMENTS
+Pair 206770 | TERRA SAR X | 12_to_under_24_hours | 13073.874548 km | source=82046287 | reference=82058366
+Pair 81943 | ISS (ZARYA) | over_48_hours | 186.126129 km | source=95872723 | reference=95916775
+Pair 210424 | TERRA SAR X | 1_second_to_1_minute | 88.185394 km | source=97085453 | reference=97085599
+Pair 4897 | AQUA | 1_second_to_1_minute | 61.295207 km | source=91798876 | reference=91709247
+Pair 53018 | DMSP 5D-3 F16 (USA 172) | over_48_hours | 54.197797 km | source=99547653 | reference=100195142
+Pair 67695 | ISS (ZARYA) | 1_second_to_1_minute | 46.281235 km | source=57291659 | reference=57291699
+Pair 83630 | ISS (ZARYA) | 1_second_to_1_minute | 34.166527 km | source=99211973 | reference=99212495
+Pair 80037 | ISS (ZARYA) | 1_second_to_1_minute | 26.778216 km | source=93142454 | reference=93142414
+Pair 103442 | LANDSAT 8 | under_1_second | 25.546846 km | source=109400906 | reference=109398766
+Pair 38081 | SKYMED 1 | over_48_hours | 25.213843 km | source=94003754 | reference=94028644
+Pair 103443 | LANDSAT 8 | under_1_second | 24.677347 km | source=109398766 | reference=109398755
+Pair 228823 | TERRA | 1_second_to_1_minute | 23.000787 km | source=98961385 | reference=98961576
+Pair 207869 | TERRA SAR X | 1_second_to_1_minute | 22.468938 km | source=86185510 | reference=86185505
+Pair 208186 | TERRA SAR X | 1_to_under_6_hours | 19.539810 km | source=87296568 | reference=87297098
+Pair 83572 | ISS (ZARYA) | 24_to_48_hours | 19.253126 km | source=99074540 | reference=99083967
+Pair 85928 | ISS (ZARYA) | over_48_hours | 18.719226 km | source=109687528 | reference=109713469
+Pair 38375 | SKYMED 1 | 1_second_to_1_minute | 17.633984 km | source=94880463 | reference=94880536
+Pair 216108 | TERRA SAR X | over_48_hours | 17.467083 km | source=276449132 | reference=276668586
+Pair 228481 | TERRA | under_1_second | 16.808336 km | source=97955697 | reference=97957513
+Pair 5193 | AQUA | 1_second_to_1_minute | 13.849602 km | source=94659139 | reference=94659072
+
+SCIENTIFIC INTERPRETATION
+Both TLE-derived SGP4 states are evaluated at the
+newer TLE's epoch in the TEME frame.
+The disagreement is a TLE-to-TLE position proxy,
+not independently verified physical orbit error.
+No pairs have been removed based on disagreement.
+
+OUTPUT FILES
+C:\Users\analo\dev\O-RAP\results\consecutive_sgp4_validation\validation_sample.csv
+C:\Users\analo\dev\O-RAP\results\consecutive_sgp4_validation\sgp4_validation_results.csv
+C:\Users\analo\dev\O-RAP\results\consecutive_sgp4_validation\validation_summary.csv
+C:\Users\analo\dev\O-RAP\results\consecutive_sgp4_validation\validation_report.txt

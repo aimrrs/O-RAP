@@ -1,0 +1,168 @@
+O-RAP RAW DATASET QUALITY REPORT
+=================================================================
+
+Files discovered: 14
+Files successfully read: 14
+Total records: 264,575
+Requested EPOCH period: 2005-01-01 to before 2026-01-01
+
+SATELLITE SUMMARY
+-----------------------------------------------------------------
+
+Aqua (NORAD 27424)
+  File status: READ_OK
+  Records: 18,224
+  EPOCH range: 2005-01-01T22:26:13.034112+00:00 to 2025-12-31T22:14:01.934592+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,065
+  Conflicting EPOCH groups: 619
+
+Aura (NORAD 28376)
+  File status: READ_OK
+  Records: 13,716
+  EPOCH range: 2005-01-01T17:44:56.725152+00:00 to 2025-12-31T21:33:09.016128+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 273
+  Conflicting EPOCH groups: 268
+
+COSMO-SkyMed 1 (NORAD 31598)
+  File status: READ_OK
+  Records: 23,567
+  EPOCH range: 2007-06-08T03:34:04.160927+00:00 to 2025-12-31T23:40:42.023136+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,034
+  Conflicting EPOCH groups: 225
+
+DMSP 5D-3 F16 (NORAD 28054)
+  File status: READ_OK
+  Records: 13,247
+  EPOCH range: 2015-06-18T22:59:26.109312+00:00 to 2025-12-31T22:36:08.577216+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,152
+  Conflicting EPOCH groups: 518
+
+ISS (NORAD 25544)
+  File status: READ_OK
+  Records: 42,105
+  EPOCH range: 2005-01-01T04:03:12.692160+00:00 to 2025-12-31T18:12:28.222272+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 5,064
+  Conflicting EPOCH groups: 684
+
+Landsat-8 (NORAD 39084)
+  File status: READ_OK
+  Records: 15,597
+  EPOCH range: 2013-02-11T19:01:55.474751+00:00 to 2025-12-31T21:12:40.606848+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,231
+  Conflicting EPOCH groups: 605
+
+METOP-A (NORAD 29499)
+  File status: READ_OK
+  Records: 15,093
+  EPOCH range: 2006-10-19T17:57:10.616255+00:00 to 2025-12-31T22:01:46.165152+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,046
+  Conflicting EPOCH groups: 435
+
+NOAA-19 (NORAD 33591)
+  File status: READ_OK
+  Records: 17,870
+  EPOCH range: 2009-02-06T11:23:28.964256+00:00 to 2025-12-31T22:05:08.208096+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,667
+  Conflicting EPOCH groups: 751
+
+NOAA-20 (NORAD 43013)
+  File status: READ_OK
+  Records: 12,176
+  EPOCH range: 2017-11-18T11:29:10.317696+00:00 to 2025-12-31T21:07:57.840384+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,540
+  Conflicting EPOCH groups: 66
+
+RADARSAT-2 (NORAD 32382)
+  File status: READ_OK
+  Records: 22,249
+  EPOCH range: 2007-12-14T13:11:22.096319+00:00 to 2025-12-31T22:44:12.444864+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 956
+  Conflicting EPOCH groups: 217
+
+Sentinel-2A (NORAD 40697)
+  File status: READ_OK
+  Records: 13,401
+  EPOCH range: 2015-06-23T03:50:23.384832+00:00 to 2025-12-31T22:36:31.196736+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 906
+  Conflicting EPOCH groups: 141
+
+Suomi-NPP (NORAD 37849)
+  File status: READ_OK
+  Records: 14,850
+  EPOCH range: 2011-10-28T12:25:03.271871+00:00 to 2025-12-31T20:46:50.856096+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,223
+  Conflicting EPOCH groups: 604
+
+Terra (NORAD 25994)
+  File status: READ_OK
+  Records: 26,613
+  EPOCH range: 2005-01-01T02:13:25.633920+00:00 to 2025-12-31T21:50:26.077920+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 455
+  Conflicting EPOCH groups: 412
+
+TerraSAR-X (NORAD 31698)
+  File status: READ_OK
+  Records: 15,867
+  EPOCH range: 2007-06-15T03:10:19.874207+00:00 to 2025-12-31T14:56:53.501280+00:00
+  Duplicate GP_ID occurrences: 0
+  Repeated EPOCH groups: 1,541
+  Conflicting EPOCH groups: 828
+
+
+DATA QUALITY FINDINGS
+-----------------------------------------------------------------
+- aqua_27424_gp_history.json: 560 duplicate TLE pair occurrences.
+- aqua_27424_gp_history.json: 1,065 repeated EPOCH groups.
+- aqua_27424_gp_history.json: 619 conflicting EPOCH groups.
+- aura_28376_gp_history.json: 5 duplicate TLE pair occurrences.
+- aura_28376_gp_history.json: 273 repeated EPOCH groups.
+- aura_28376_gp_history.json: 268 conflicting EPOCH groups.
+- cosmo_skymed_1_31598_gp_history.json: 810 duplicate TLE pair occurrences.
+- cosmo_skymed_1_31598_gp_history.json: 1,034 repeated EPOCH groups.
+- cosmo_skymed_1_31598_gp_history.json: 225 conflicting EPOCH groups.
+- dmsp_5d_3_f16_28054_gp_history.json: 1,024 duplicate TLE pair occurrences.
+- dmsp_5d_3_f16_28054_gp_history.json: 1,152 repeated EPOCH groups.
+- dmsp_5d_3_f16_28054_gp_history.json: 518 conflicting EPOCH groups.
+- iss_25544_gp_history.json: 4,692 duplicate TLE pair occurrences.
+- iss_25544_gp_history.json: 5,064 repeated EPOCH groups.
+- iss_25544_gp_history.json: 684 conflicting EPOCH groups.
+- landsat_8_39084_gp_history.json: 1,058 duplicate TLE pair occurrences.
+- landsat_8_39084_gp_history.json: 1,231 repeated EPOCH groups.
+- landsat_8_39084_gp_history.json: 605 conflicting EPOCH groups.
+- metop_a_29499_gp_history.json: 971 duplicate TLE pair occurrences.
+- metop_a_29499_gp_history.json: 1,046 repeated EPOCH groups.
+- metop_a_29499_gp_history.json: 435 conflicting EPOCH groups.
+- noaa_19_33591_gp_history.json: 1,277 duplicate TLE pair occurrences.
+- noaa_19_33591_gp_history.json: 1,667 repeated EPOCH groups.
+- noaa_19_33591_gp_history.json: 751 conflicting EPOCH groups.
+- noaa_20_43013_gp_history.json: 1,847 duplicate TLE pair occurrences.
+- noaa_20_43013_gp_history.json: 1,540 repeated EPOCH groups.
+- noaa_20_43013_gp_history.json: 66 conflicting EPOCH groups.
+- radarsat_2_32382_gp_history.json: 740 duplicate TLE pair occurrences.
+- radarsat_2_32382_gp_history.json: 956 repeated EPOCH groups.
+- radarsat_2_32382_gp_history.json: 217 conflicting EPOCH groups.
+- sentinel_2a_40697_gp_history.json: 766 duplicate TLE pair occurrences.
+- sentinel_2a_40697_gp_history.json: 906 repeated EPOCH groups.
+- sentinel_2a_40697_gp_history.json: 141 conflicting EPOCH groups.
+- suomi_npp_37849_gp_history.json: 1,011 duplicate TLE pair occurrences.
+- suomi_npp_37849_gp_history.json: 1,223 repeated EPOCH groups.
+- suomi_npp_37849_gp_history.json: 604 conflicting EPOCH groups.
+- terra_25994_gp_history.json: 46 duplicate TLE pair occurrences.
+- terra_25994_gp_history.json: 455 repeated EPOCH groups.
+- terra_25994_gp_history.json: 412 conflicting EPOCH groups.
+- terrasar_x_31698_gp_history.json: 760 duplicate TLE pair occurrences.
+- terrasar_x_31698_gp_history.json: 1,541 repeated EPOCH groups.
+- terrasar_x_31698_gp_history.json: 828 conflicting EPOCH groups.

@@ -1,0 +1,132 @@
+{
+  "project": "O-RAP",
+  "generator": "src/generate_orap_figures.py",
+  "generated_at_utc": "2026-11-04T15:00:20.108283+00:00",
+  "python_version": "3.14.10 (tags/v3.14.10:b703b2c, Oct 25 2026, 17:36:52) [MSC v.1944 64 bit (AMD64)]",
+  "numpy_version": "2.5.4",
+  "matplotlib_version": "3.11.2",
+  "figure_resolution_dpi": 300,
+  "figures": [
+    {
+      "filename": "figure_01_chronological_curves",
+      "source_files": [
+        "results\\modeling\\experiments\\orbital_only_analysis\\orbital_only_test_predictions.csv"
+      ],
+      "description": "Chronological precision-recall and ROC curves.",
+      "formats": [
+        "PNG",
+        "PDF"
+      ],
+      "resolution_dpi": 300
+    },
+    {
+      "filename": "figure_02_calibration",
+      "source_files": [
+        "results\\modeling\\experiments\\orbital_only_analysis\\orbital_only_calibration_bins.csv"
+      ],
+      "description": "Calibration diagram with actual sample counts per bin.",
+      "formats": [
+        "PNG",
+        "PDF"
+      ],
+      "resolution_dpi": 300
+    },
+    {
+      "filename": "figure_03_feature_importance",
+      "source_files": [
+        "results\\modeling\\experiments\\orbital_only_analysis\\orbital_only_feature_importance.csv"
+      ],
+      "description": "Source orbital feature importance from the trained model.",
+      "formats": [
+        "PNG",
+        "PDF"
+      ],
+      "resolution_dpi": 300
+    },
+    {
+      "filename": "figure_04_loso_pr_auc",
+      "source_files": [
+        "results\\modeling\\experiments\\loso\\loso_by_satellite.csv"
+      ],
+      "description": "Raw per-fold LOSO average precision with test sample and positive counts.",
+      "formats": [
+        "PNG",
+        "PDF"
+      ],
+      "resolution_dpi": 300
+    },
+    {
+      "filename": "figure_05_loso_roc_auc",
+      "source_files": [
+        "results\\modeling\\experiments\\loso\\loso_by_satellite.csv"
+      ],
+      "description": "Raw per-fold LOSO ROC-AUC with test sample and positive counts.",
+      "formats": [
+        "PNG",
+        "PDF"
+      ],
+      "resolution_dpi": 300
+    },
+    {
+      "filename": "figure_06_threshold_sensitivity",
+      "source_files": [
+        "results\\modeling\\experiments\\threshold_sensitivity\\threshold_sensitivity_summary.csv"
+      ],
+      "description": "Threshold sensitivity using measured test metrics and prevalence derived from counts.",
+      "formats": [
+        "PNG",
+        "PDF"
+      ],
+      "resolution_dpi": 300
+    }
+  ],
+  "input_files": [
+    {
+      "file": "results\\modeling\\experiments\\orbital_only_analysis\\orbital_only_test_predictions.csv",
+      "sha256": "c5b008a819ec03f565431267922a35b0ad601f6f201f7ef23d40f35692ad119a",
+      "columns_used": [
+        "actual_label",
+        "calibrated_probability"
+      ]
+    },
+    {
+      "file": "results\\modeling\\experiments\\orbital_only_analysis\\orbital_only_calibration_bins.csv",
+      "sha256": "e17372457eb3f9ed27e4668d0b94ef6db9dcfeae6d21f3bd2e8e1bcd6e78c919",
+      "columns_used": [
+        "mean_predicted_probability",
+        "observed_positive_rate",
+        "samples"
+      ]
+    },
+    {
+      "file": "results\\modeling\\experiments\\orbital_only_analysis\\orbital_only_feature_importance.csv",
+      "sha256": "92b98cb83240b56e2b7c135377e50d04ab7f0e403afb61b9a7cecdd6b833fc21",
+      "columns_used": [
+        "feature",
+        "importance"
+      ]
+    },
+    {
+      "file": "results\\modeling\\experiments\\loso\\loso_by_satellite.csv",
+      "sha256": "cdacdd8d6c0d859979935a557f5f5e7d5ba0d11ef1e480e79bbe263efe645305",
+      "columns_used": [
+        "satellite_name",
+        "raw_pr_auc",
+        "test_samples",
+        "test_positives"
+      ]
+    },
+    {
+      "file": "results\\modeling\\experiments\\threshold_sensitivity\\threshold_sensitivity_summary.csv",
+      "sha256": "4567e05b46b66bb0b3f39de87d9a7259d68cd13569757b2d52091a0cbdf6b8bf",
+      "columns_used": [
+        "disagreement_threshold_km",
+        "calibrated_pr_auc",
+        "calibrated_roc_auc",
+        "calibrated_f1",
+        "calibrated_samples",
+        "calibrated_positives"
+      ]
+    }
+  ]
+}

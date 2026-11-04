@@ -1,0 +1,35 @@
+{
+    "random_state": 42,
+    "target": "label_1km",
+    "positive_class": 1,
+    "features": [
+        "interval_hours",
+        "mean_motion",
+        "eccentricity",
+        "inclination",
+        "raan",
+        "argument_of_pericenter",
+        "mean_anomaly",
+        "bstar",
+        "mean_motion_dot",
+        "mean_motion_ddot",
+        "semimajor_axis",
+        "orbital_period",
+        "apoapsis",
+        "periapsis"
+    ],
+    "training_scale_pos_weight": 10.874326876005314,
+    "xgboost": {
+        "n_estimators": 500,
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 5,
+        "subsample": 0.8,
+        "colsample_bytree": 0.8,
+        "reg_alpha": 0.5,
+        "reg_lambda": 5.0
+    },
+    "calibration": "Platt scaling fitted on validation predictions",
+    "threshold_selection": "Maximum validation F1, applied unchanged to test",
+    "test_usage": "Final evaluation only"
+}

@@ -1,0 +1,42 @@
+O-RAP CONSECUTIVE TLE PAIR AUDIT
+=======================================================
+
+PAIRING METHODOLOGY
+- Records grouped by NORAD ID.
+- TLE epochs normalized to UTC.
+- Duplicate epochs resolved by latest CREATION_DATE.
+- Ties resolved using GP_ID, then original record index.
+- Records sorted by distinct epoch.
+- Each epoch paired with the immediately following epoch.
+- No fixed prediction horizon imposed.
+
+DATASET SUMMARY
+Raw records: 264,575
+Unique epochs: 242,589
+Duplicate epoch groups: 19,153
+Records removed by epoch deduplication: 21,986
+Consecutive pairs generated: 242,575
+Satellite/NORAD groups: 14
+
+INTERVAL BUCKETS
+Under 1 hour: 2,080
+1 to under 6 hours: 88,540
+6 to under 12 hours: 112,356
+12 to under 24 hours: 30,798
+24 to 48 hours: 8,190
+Over 48 hours: 611
+
+IMPORTANT INTERPRETATION
+These pairs measure disagreement between two TLE-derived
+SGP4 trajectories at the newer TLE's epoch.
+They do not represent independently verified physical
+orbit errors.
+
+Duplicate-epoch resolution retains one representative
+record per exact normalized epoch. Original raw files
+remain unchanged.
+
+OUTPUT FILES
+C:\Users\analo\dev\O-RAP\data\processed\consecutive_tle_pairs.csv
+C:\Users\analo\dev\O-RAP\results\consecutive_pair_audit\pair_summary.csv
+C:\Users\analo\dev\O-RAP\results\consecutive_pair_audit\pair_report.txt

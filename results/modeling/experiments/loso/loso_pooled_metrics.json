@@ -1,0 +1,14 @@
+{
+  "samples": 36382,
+  "positives": 3095,
+  "positive_rate_percent": 8.50695398823594,
+  "raw_pr_auc": 0.27764655675713523,
+  "raw_roc_auc": 0.8042925935224436,
+  "calibrated_pr_auc": 0.14424017521093904,
+  "calibrated_roc_auc": 0.7355697715462619,
+  "calibrated_brier_score": 0.08117510175190348,
+  "calibrated_log_loss": 0.27535901009485175,
+  "calibrated_precision": 0.18178472861085557,
+  "calibrated_recall": 0.6384491114701131,
+  "calibrated_f1": 0.2829931972789116
+}

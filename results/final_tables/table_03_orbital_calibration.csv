@@ -1,0 +1,3 @@
+﻿Model,N,Positive,Prevalence,PR-AUC,ROC-AUC,Brier,Log loss,Precision,Recall,F1,Decision threshold
+orbital_only_xgboost_raw,36382,3095,8.507%,0.2991,0.8216,0.3118,0.8865,0.1551,0.9493,0.2666,0.5000
+orbital_only_xgboost_platt,36382,3095,8.507%,0.2991,0.8216,0.0718,0.2424,0.2117,0.7994,0.3348,0.1484

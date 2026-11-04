@@ -1,0 +1,6 @@
+﻿Model,N,PR-AUC,ROC-AUC,F1,Brier score,Log loss
+interval_only_xgboost,36382,0.2303,0.7624,0.2860,0.2059,0.5956
+orbital_only_xgboost,36382,0.2991,0.8216,0.3348,0.3118,0.8865
+combined_xgboost,36382,0.4119,0.8671,0.4305,0.2477,0.7339
+combined_logistic_regression,36382,0.3497,0.8489,0.3059,0.1695,0.5109
+combined_xgboost_platt,36382,0.4119,0.8671,0.4305,0.0646,0.2167
