@@ -1,0 +1,47 @@
+{
+  "description": "O-RAP final IEEE results tables",
+  "source_files": {
+    "model_comparison": {
+      "path": "results\\modeling\\experiments\\model_comparison.csv",
+      "sha256": "91a535198cabb8a7bcebede92e349065683e051cc52785ccd0c40a2c686b77dd"
+    },
+    "orbital_metrics": {
+      "path": "results\\modeling\\experiments\\orbital_only_analysis\\orbital_only_calibration_metrics.csv",
+      "sha256": "7f926a4921441dcc663e718a387b7095dd695025ffd3e485d02d3bf3f32f8686"
+    },
+    "loso": {
+      "path": "results\\modeling\\experiments\\loso\\loso_by_satellite.csv",
+      "sha256": "cdacdd8d6c0d859979935a557f5f5e7d5ba0d11ef1e480e79bbe263efe645305"
+    },
+    "loso_pooled": {
+      "path": "results\\modeling\\experiments\\loso\\loso_pooled_metrics.json",
+      "sha256": "b2a0d144769d6871bd7e9b6361810e61596d436ca9c520f1b683657a934d05df"
+    },
+    "threshold": {
+      "path": "results\\modeling\\experiments\\threshold_sensitivity\\threshold_sensitivity_summary.csv",
+      "sha256": "4567e05b46b66bb0b3f39de87d9a7259d68cd13569757b2d52091a0cbdf6b8bf"
+    },
+    "splits": {
+      "path": "results\\modeling\\splits\\split_summary.csv",
+      "sha256": "8b3e99ee4bbefea1f2d8eaa678c26f171f6e66fda875f1bc0b89f513566f286a"
+    },
+    "boundary_excluded": {
+      "path": "results\\modeling\\splits\\boundary_excluded_pairs.csv",
+      "sha256": "145652fdcb9518e1809db3aef33adaada6c0b7565e0d69fce482d9eed756e930"
+    }
+  },
+  "generated_tables": [
+    "table_01_dataset_split.csv",
+    "table_01_dataset_split.md",
+    "table_02_model_comparison.csv",
+    "table_02_model_comparison.md",
+    "table_03_orbital_calibration.csv",
+    "table_03_orbital_calibration.md",
+    "table_04_loso_satellite.csv",
+    "table_04_loso_satellite.md",
+    "table_05_loso_pooled.csv",
+    "table_05_loso_pooled.md",
+    "table_06_threshold_sensitivity.csv",
+    "table_06_threshold_sensitivity.md"
+  ]
+}

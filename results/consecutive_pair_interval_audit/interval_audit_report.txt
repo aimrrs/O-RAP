@@ -1,0 +1,54 @@
+O-RAP CONSECUTIVE PAIR INTERVAL AUDIT
+=================================================================
+
+OVERALL
+Total pairs: 242,575
+Pairs checked: 242,575
+Provenance errors: 0
+Identical complete TLE lines: 0
+Identical orbital element fields: 33
+
+INTERVAL DISTRIBUTION
+Under 1 second: 362 (0.1492%)
+1 second to under 1 minute: 58 (0.0239%)
+1 to under 5 minutes: 62 (0.0256%)
+5 to under 60 minutes: 1,598 (0.6588%)
+1 to under 6 hours: 88,540 (36.5001%)
+6 to under 12 hours: 112,356 (46.3180%)
+12 to under 24 hours: 30,798 (12.6963%)
+24 to 48 hours: 8,190 (3.3763%)
+Over 48 hours: 611 (0.2519%)
+
+INTERVAL SUMMARY (HOURS)
+Minimum: 0.000000000278
+Median: 6.787704960
+Maximum: 1438.697192160
+
+SATELLITE-LEVEL SHORT INTERVAL AUDIT
+Satellite | Pairs | <1 sec | <1 min | <5 min | <1 hour | Identical TLE | Identical elements | Provenance errors
+AQUA | 17,044 | 15 | 18 | 19 | 100 | 0 | 3 | 0
+AURA | 13,442 | 29 | 31 | 31 | 31 | 0 | 0 | 0
+DMSP 5D-3 F16 (USA 172) | 11,704 | 1 | 2 | 2 | 26 | 0 | 0 | 0
+ISS (ZARYA) | 36,704 | 87 | 105 | 136 | 1,386 | 0 | 4 | 0
+LANDSAT 8 | 13,933 | 40 | 41 | 41 | 44 | 0 | 0 | 0
+METOP-A | 13,686 | 13 | 17 | 19 | 90 | 0 | 2 | 0
+NOAA 19 | 15,841 | 27 | 27 | 27 | 28 | 0 | 2 | 0
+NOAA 20 | 10,262 | 25 | 25 | 25 | 27 | 0 | 0 | 0
+NPP | 13,234 | 14 | 14 | 23 | 32 | 0 | 0 | 0
+RADARSAT 2 | 21,291 | 13 | 14 | 15 | 20 | 0 | 4 | 0
+SENTINEL 2A | 12,493 | 15 | 17 | 17 | 18 | 0 | 4 | 0
+SKYMED 1 | 22,531 | 22 | 24 | 24 | 24 | 0 | 5 | 0
+TERRA | 26,154 | 30 | 35 | 36 | 60 | 0 | 4 | 0
+TERRA SAR X | 14,256 | 31 | 50 | 67 | 194 | 0 | 5 | 0
+
+INTERPRETATION
+- This audit does not remove or modify any pairs.
+- Identical TLE lines indicate no change in the complete
+  two-line element representation.
+- Identical orbital fields compare selected JSON fields.
+- Very short intervals require scientific review.
+- Provenance errors indicate a mismatch between pair CSV
+  references and original raw JSON records.
+
+OUTPUT
+C:\Users\analo\dev\O-RAP\results\consecutive_pair_interval_audit\short_interval_pairs.csv
