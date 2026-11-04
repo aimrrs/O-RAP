@@ -24,6 +24,10 @@
     "splits": {
       "path": "results\\modeling\\splits\\split_summary.csv",
       "sha256": "8b3e99ee4bbefea1f2d8eaa678c26f171f6e66fda875f1bc0b89f513566f286a"
+    },
+    "boundary_excluded": {
+      "path": "results\\modeling\\splits\\boundary_excluded_pairs.csv",
+      "sha256": "145652fdcb9518e1809db3aef33adaada6c0b7565e0d69fce482d9eed756e930"
     }
   },
   "generated_tables": [
