@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A simple interface for exploring the O-RAP orbital reliability research model.">
+  <title>O-RAP · Orbital reliability, made clear</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="O-RAP home">
+      <span class="brand-mark" aria-hidden="true">O</span>
+      <span><strong>O-RAP</strong><small>Orbital reliability</small></span>
+    </a>
+    <nav aria-label="Main navigation" class="main-nav">
+      <a href="/" data-page-link="prediction" class="active">Prediction</a>
+      <a href="/research" data-page-link="research">Research</a>
+      <a href="/about" data-page-link="about">About</a>
+    </nav>
+    <span class="header-note"><span class="status-dot"></span> Research preview</span>
+  </header>
+
+  <main>
+    <section id="prediction" class="page active" aria-labelledby="prediction-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> ORBITAL RELIABILITY ASSESSMENT</p>
+          <h1 id="prediction-title">A clearer view of<br><em>orbital uncertainty.</em></h1>
+          <p class="hero-intro">Explore how orbital elements relate to disagreement between successive satellite orbit estimates.</p>
+        </div>
+        <div class="orbit-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="planet"></div><span class="orbit-point"></span><span class="art-cross cross-one">+</span><span class="art-cross cross-two">+</span></div>
+      </div>
+
+      <div class="section-heading">
+        <div><p class="eyebrow">TRY THE MODEL</p><h2>Explore an orbital record</h2></div>
+        <p class="section-aside">Paste a standard two-line element set or load a real project example.</p>
+      </div>
+
+      <div class="prediction-layout">
+        <form id="prediction-form" class="input-card">
+          <div class="card-topline"><span class="step-number">01</span><span>Choose a starting point</span><span class="topline-rule"></span></div>
+          <label class="field-label" for="sample-select">Load an example TLE set</label>
+          <select id="sample-select" class="select-control"><option value="">Loading project records…</option></select>
+          <p class="field-help">Examples are formatted from the project’s actual historical GP records. You can paste another two-line element set below.</p>
+          <div class="record-meta" id="record-meta" aria-live="polite"></div>
+          <label class="field-label tle-label" for="tle-input">TLE set <span>Line 1 and line 2</span></label>
+          <textarea id="tle-input" class="tle-input" rows="3" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="Paste TLE line 1 and line 2 here." required></textarea>
+          <p class="field-help">Paste exactly two TLE lines. O-RAP derives the orbital inputs from the fields in the TLE.</p>
+
+          <div class="card-topline field-section-top"><span class="step-number">02</span><span>Run the research model</span><span class="topline-rule"></span></div>
+          <button class="primary-button" type="submit"><span>Estimate disagreement risk</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+          <p class="privacy-note">The estimate runs locally against the model included with this research repository.</p>
+        </form>
+
+        <aside class="result-column">
+          <div id="result-card" class="result-card empty-result" aria-live="polite">
+            <div class="result-orbit" aria-hidden="true"><span></span></div>
+            <p class="eyebrow">MODEL ESTIMATE</p>
+            <h3>Your result will appear here</h3>
+            <p>Choose a record and run an estimate to see the model’s output and what it means.</p>
+            <div class="result-foot"><span>Orbital-only model</span><span class="mini-dot"></span><span>13 input features</span></div>
+          </div>
+          <div id="model-details" class="model-details" hidden></div>
+          <div class="notice-card"><span class="notice-icon">i</span><p><strong>Research result, not a safety forecast.</strong> O-RAP estimates disagreement between two TLE-based SGP4 positions. It does not measure true orbit error or collision risk.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="research" class="page" aria-labelledby="research-title" hidden>
+      <div class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> WHAT THE STUDY FOUND</p><h1 id="research-title">The evidence,<br><em>in plain language.</em></h1><p>Explore the dataset, model performance, calibration, threshold sensitivity, and generalization results. Values are loaded directly from the repository’s generated research files.</p></div>
+      <div id="research-content" class="research-content"><div class="loading-card">Loading published research results…</div></div>
+    </section>
+
+    <section id="about" class="page" aria-labelledby="about-title" hidden>
+      <div class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> ABOUT O-RAP</p><h1 id="about-title">A research tool for<br><em>understanding orbit estimates.</em></h1><p>O-RAP means Orbital Reliability Assessment and Prediction. It is a reproducible research project studying whether information in Two-Line Element records can help describe when successive SGP4 position estimates disagree.</p></div>
+      <div class="about-grid">
+        <article class="about-card about-wide"><span class="card-index">01 / THE RESEARCH QUESTION</span><h2>When do consecutive orbit estimates disagree?</h2><p>Satellite operators publish orbital estimates as TLE records. O-RAP examines consecutive, distinct TLE epochs for a satellite. It propagates the older TLE to the newer TLE’s epoch, then compares that position with the position from the newer TLE propagated to the same epoch. This produces a consistent comparison time for each pair.</p><div class="simple-flow"><span>Older TLE</span><b>→</b><span>SGP4 at shared epoch</span><b>↔</b><span>Newer TLE</span></div></article>
+        <article class="about-card"><span class="card-index">02 / WHAT THE LABEL MEANS</span><h2>A study definition</h2><p>A pair is labelled unreliable when the two calculated TEME positions differ by more than 1 km; differences at or below 1 km are labelled reliable. This is a comparison between two TLE-based estimates, not ground-truth orbit error.</p></article>
+        <article class="about-card"><span class="card-index">03 / WHAT THE MODEL SEES</span><h2>13 orbital features</h2><p>The orbital-only XGBoost model uses the source TLE’s mean motion, eccentricity, inclination, node, pericenter, anomaly, drag term, motion derivatives, semimajor axis, period, apoapsis, and periapsis. The interval to the next record is excluded because it is not known at the source TLE time.</p></article>
+        <article class="about-card"><span class="card-index">04 / DATA AND EVALUATION</span><h2>Time-ordered research</h2><p>The repository contains records for 14 satellites and 242,547 constructed consecutive pairs. The chronological evaluation separates earlier training data from later validation and test periods. It also includes leave-one-satellite-out experiments to examine performance on satellites held out during training.</p></article>
+        <article class="about-card"><span class="card-index">05 / CALIBRATION</span><h2>Readable probabilities</h2><p>Platt scaling is fitted using validation predictions to make the orbital-only model’s probabilities better aligned with observed study labels. The classification cutoff is also selected on validation data; it is a research operating point, not a universal boundary.</p></article>
+        <article class="about-card about-wide"><span class="card-index">06 / LIMITATIONS</span><h2>What O-RAP does not claim</h2><p>The project does not compare predictions with independently measured satellite positions. Its labels are based on disagreement between two SGP4 propagations using successive TLEs. Estimates should not be interpreted as physical orbit-error measurements, collision probabilities, conjunction screening, or operational safety advice. Performance can vary across satellites, time periods, and decision thresholds.</p></article>
+        <article class="about-card about-wide version-card"><div><span class="card-index">07 / REPRODUCIBLE PROJECT</span><h2>Research artifacts remain part of the work</h2><p>O-RAP includes raw GP history data, processed pairs, validation and audit outputs, feature and split files, trained estimators, calibration outputs, evaluation tables, and publication figures. The website presents those results without retraining or changing the scientific pipeline.</p></div><span class="version-badge">Research baseline<br><strong>v2.0.0</strong></span></article>
+      </div>
+      <footer class="page-footer"><span>O-RAP · Orbital Reliability Assessment and Prediction</span><a href="/research">Explore the research →</a></footer>
+    </section>
+  </main>
+  <footer class="site-footer"><span>O-RAP <span class="footer-separator">/</span> Research interface</span><span>Exploratory research · Not operational guidance</span></footer>
+</body>
+</html>
